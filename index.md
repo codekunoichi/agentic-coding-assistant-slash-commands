@@ -66,19 +66,50 @@ These commands emphasize:
 
 ## Using File References
 
-All commands support the `@filename` syntax to inject file contents as input:
+All commands support the `@filename` syntax to inject file contents as input. This is **strongly recommended** over inline arguments for anything non-trivial.
 
-**Claude Code:**
+### Claude Code
+
 ```bash
+# Simple inline (okay for quick questions)
+/brainstorm "how to handle rate limiting"
+
+# File reference (recommended)
 /brainstorm @rate-limiting-ideas.md
+
+# Multiple files with project context
 /devils-advocate @proposal.md @CLAUDE.md
+
+# More examples
+/code-review src/components/
+/plan @requirements.md
+/explore @feature-spec.md
 ```
 
-**OpenAI Codex:**
+### OpenAI Codex
+
 ```bash
+# Simple inline (okay for quick questions)
+/prompts:brainstorm "how to handle rate limiting"
+
+# File reference (recommended)
 /prompts:brainstorm @rate-limiting-ideas.md
+
+# Multiple files with project context
 /prompts:devils-advocate @proposal.md @AGENTS.md
+
+# More examples
+/prompts:code-review src/components/
+/prompts:plan @requirements.md
+/prompts:explore @feature-spec.md
 ```
+
+### Why use file references?
+
+- Complex ideas can't be expressed in one line
+- Your input becomes version-controlled documentation
+- You can include project context (`CLAUDE.md` or `AGENTS.md`) for grounded analysis
+- Iterate on the input separately from the conversation
 
 ## Acknowledgments
 
