@@ -4,7 +4,18 @@ A collection of reusable slash commands for [Claude Code](https://docs.anthropic
 
 ## Installation
 
-### Claude Code
+### Quick Install (Recommended)
+
+```bash
+./install.sh
+```
+
+Interactive script that installs commands to your preferred location with Jekyll front matter stripped for clean prompts.
+
+### Manual Install
+
+<details>
+<summary>Claude Code</summary>
 
 **Project-level** (recommended for team sharing):
 ```bash
@@ -19,8 +30,10 @@ mkdir -p ~/.claude/commands
 cp commands/*.md ~/.claude/commands/
 cp personas/*.md ~/.claude/commands/
 ```
+</details>
 
-### OpenAI Codex
+<details>
+<summary>OpenAI Codex</summary>
 
 **Project-level**:
 ```bash
@@ -28,6 +41,7 @@ mkdir -p .codex/prompts
 cp commands/*.md .codex/prompts/
 cp personas/*.md .codex/prompts/
 ```
+</details>
 
 ## Commands
 

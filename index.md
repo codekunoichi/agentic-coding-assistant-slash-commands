@@ -10,25 +10,26 @@ A collection of reusable slash commands for [Claude Code](https://docs.anthropic
 
 ## Installation
 
-### Claude Code
+### Quick Install (Recommended)
 
-**Project-level** (recommended for team sharing):
+```bash
+git clone https://github.com/codekunoichi/agentic-coding-assistant-slash-commands.git
+cd agentic-coding-assistant-slash-commands
+./install.sh
+```
+
+Interactive script that installs commands to your preferred location with Jekyll front matter stripped for clean prompts.
+
+### Manual Install
+
+**Claude Code (project-level):**
 ```bash
 mkdir -p .claude/commands
 cp commands/*.md .claude/commands/
 cp personas/*.md .claude/commands/
 ```
 
-**User-global** (available across all your projects):
-```bash
-mkdir -p ~/.claude/commands
-cp commands/*.md ~/.claude/commands/
-cp personas/*.md ~/.claude/commands/
-```
-
-### OpenAI Codex
-
-**Project-level**:
+**OpenAI Codex (project-level):**
 ```bash
 mkdir -p .codex/prompts
 cp commands/*.md .codex/prompts/
