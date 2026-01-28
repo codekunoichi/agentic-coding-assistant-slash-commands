@@ -45,46 +45,71 @@ cp personas/*.md .codex/prompts/
 
 ## Commands
 
-| Command | Purpose | Usage |
-|---------|---------|-------|
-| `/brainstorm` | Expansive ideation and exploration | `/brainstorm @idea.md` |
-| `/code-review` | Comprehensive code review with priority findings | `/code-review src/components/` |
-| `/commit-per-file` | Atomic git commits for each changed file | `/commit-per-file` |
-| `/devils-advocate` | Challenge assumptions and find weaknesses | `/devils-advocate @proposal.md` |
-| `/document` | Update documentation after code changes | `/document` |
-| `/execute` | Implement planned work with progress tracking | `/execute` |
-| `/explore` | Understand before implementing | `/explore @feature-spec.md` |
-| `/learning-opportunity` | Three-level concept explanation for learning | `/learning-opportunity` |
-| `/peer-review` | Evaluate and verify peer review findings | `/peer-review @findings.md` |
-| `/plan` | Structured implementation planning | `/plan @requirements.md` |
+| Command | Purpose |
+|---------|---------|
+| `brainstorm` | Expansive ideation and exploration |
+| `code-review` | Comprehensive code review with priority findings |
+| `commit-per-file` | Atomic git commits for each changed file |
+| `devils-advocate` | Challenge assumptions and find weaknesses |
+| `document` | Update documentation after code changes |
+| `execute` | Implement planned work with progress tracking |
+| `explore` | Understand before implementing |
+| `learning-opportunity` | Three-level concept explanation for learning |
+| `peer-review` | Evaluate and verify peer review findings |
+| `plan` | Structured implementation planning |
 
 ## Personas
 
 The `personas/` directory contains specialized agent prompts based on the Constitutional AI methodology - using the AI as different expert roles for collaborative problem-solving.
 
-| Persona | Role | Usage |
-|---------|------|-------|
-| `/product-owner` | Requirements, user stories, acceptance criteria | `/product-owner @prd.md` |
-| `/software-engineer` | Architecture, implementation, code quality | `/software-engineer @design.md` |
-| `/sdet` | Testing strategy, edge cases, quality assurance | `/sdet @feature-spec.md` |
+| Persona | Role |
+|---------|------|
+| `product-owner` | Requirements, user stories, acceptance criteria |
+| `software-engineer` | Architecture, implementation, code quality |
+| `sdet` | Testing strategy, edge cases, quality assurance |
+
+## Usage
+
+**Claude Code:**
+```bash
+/brainstorm @idea.md
+/code-review src/components/
+/plan @requirements.md
+```
+
+**OpenAI Codex:**
+```bash
+/prompts:brainstorm @idea.md
+/prompts:code-review src/components/
+/prompts:plan @requirements.md
+```
 
 ## Using File References
 
 All commands support the `@filename` syntax to inject file contents as input. This is **strongly recommended** over inline arguments for anything non-trivial.
 
+**Claude Code:**
 ```bash
-# Simple inline (okay for quick questions)
+# Simple inline
 /brainstorm "how to handle rate limiting"
 
-# File reference (better for real work)
+# File reference (recommended)
 /brainstorm @rate-limiting-ideas.md
 
-# Multiple files with project context (best for grounded analysis)
-# Claude Code:
+# With project context
 /devils-advocate @proposal.md @CLAUDE.md
+```
 
-# Codex:
-/devils-advocate @proposal.md @AGENTS.md
+**OpenAI Codex:**
+```bash
+# Simple inline
+/prompts:brainstorm "how to handle rate limiting"
+
+# File reference (recommended)
+/prompts:brainstorm @rate-limiting-ideas.md
+
+# With project context
+/prompts:devils-advocate @proposal.md @AGENTS.md
 ```
 
 **Why use file references?**

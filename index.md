@@ -40,16 +40,20 @@ cp personas/*.md .codex/prompts/
 
 | Command | Purpose |
 |---------|---------|
-| [`/brainstorm`](commands/brainstorm) | Expansive ideation and exploration |
-| [`/code-review`](commands/code-review) | Comprehensive code review with priority findings |
-| [`/commit-per-file`](commands/commit-per-file) | Atomic git commits for each changed file |
-| [`/devils-advocate`](commands/devils-advocate) | Challenge assumptions and find weaknesses |
-| [`/document`](commands/document) | Update documentation after code changes |
-| [`/execute`](commands/execute) | Implement planned work with progress tracking |
-| [`/explore`](commands/explore) | Understand before implementing |
-| [`/learning-opportunity`](commands/learning-opportunity) | Three-level concept explanation |
-| [`/peer-review`](commands/peer-review) | Evaluate and verify peer review findings |
-| [`/plan`](commands/plan) | Structured implementation planning |
+| [`brainstorm`](commands/brainstorm) | Expansive ideation and exploration |
+| [`code-review`](commands/code-review) | Comprehensive code review with priority findings |
+| [`commit-per-file`](commands/commit-per-file) | Atomic git commits for each changed file |
+| [`devils-advocate`](commands/devils-advocate) | Challenge assumptions and find weaknesses |
+| [`document`](commands/document) | Update documentation after code changes |
+| [`execute`](commands/execute) | Implement planned work with progress tracking |
+| [`explore`](commands/explore) | Understand before implementing |
+| [`learning-opportunity`](commands/learning-opportunity) | Three-level concept explanation |
+| [`peer-review`](commands/peer-review) | Evaluate and verify peer review findings |
+| [`plan`](commands/plan) | Structured implementation planning |
+
+**Invocation syntax:**
+- Claude Code: `/command-name`
+- OpenAI Codex: `/prompts:command-name`
 
 ## Philosophy
 
@@ -64,15 +68,16 @@ These commands emphasize:
 
 All commands support the `@filename` syntax to inject file contents as input:
 
+**Claude Code:**
 ```bash
-# Simple inline (okay for quick questions)
-/brainstorm "how to handle rate limiting"
-
-# File reference (better for real work)
 /brainstorm @rate-limiting-ideas.md
-
-# Multiple files with project context
 /devils-advocate @proposal.md @CLAUDE.md
+```
+
+**OpenAI Codex:**
+```bash
+/prompts:brainstorm @rate-limiting-ideas.md
+/prompts:devils-advocate @proposal.md @AGENTS.md
 ```
 
 ## Acknowledgments
