@@ -1,0 +1,38 @@
+title: Agentic Coding Assistant Slash Commands
+description: Reusable slash commands for Claude Code and OpenAI Codex
+remote_theme: just-the-docs/just-the-docs
+
+# Site URL (update with your GitHub username)
+url: https://codekunoichi.github.io
+baseurl: /agentic-coding-assistant-slash-commands
+
+# Aux links (top right)
+aux_links:
+  "View on GitHub": https://github.com/codekunoichi/agentic-coding-assistant-slash-commands
+
+# Footer
+footer_content: "MIT License"
+
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+# Navigation structure
+nav_enabled: true
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Color scheme (light/dark)
+color_scheme: light
+
+# Exclude files from build
+exclude:
+  - LICENSE
+  - .gitignore
+  - "*.gemspec"
+  - Gemfile
+  - Gemfile.lock
