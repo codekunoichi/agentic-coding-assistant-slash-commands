@@ -1,3 +1,10 @@
+---
+layout: default
+title: /document
+parent: Commands
+nav_order: 5
+---
+
 # Update Documentation Task
 
 You are updating documentation after code changes.

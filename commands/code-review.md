@@ -1,3 +1,10 @@
+---
+layout: default
+title: /code-review
+parent: Commands
+nav_order: 2
+---
+
 # Code Review
 
 Your task is to perform a comprehensive code review on the specified file or folder. Be thorough but concise.

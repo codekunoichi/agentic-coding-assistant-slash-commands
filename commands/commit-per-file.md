@@ -1,3 +1,10 @@
+---
+layout: default
+title: /commit-per-file
+parent: Commands
+nav_order: 3
+---
+
 # Git Commit Per File
 
 Generate clear, descriptive git commit messages for each changed file individually, then commit them one at a time.

@@ -1,3 +1,10 @@
+---
+layout: default
+title: /peer-review
+parent: Commands
+nav_order: 9
+---
+
 # Peer Review Evaluation
 
 Your task is to critically evaluate peer review findings from another team lead. You have more context on this project - don't accept findings at face value.

@@ -1,3 +1,10 @@
+---
+layout: default
+title: /plan
+parent: Commands
+nav_order: 10
+---
+
 # Implementation Planning
 
 Your task is to create a clear, actionable implementation plan. We've already explored and understand the problem - now we need a roadmap.

@@ -1,3 +1,12 @@
+---
+layout: default
+title: /execute
+parent: Commands
+nav_order: 6
+---
+
+# Execute
+
 Now implement precisely as planned, in full.
 
 Implementation Requirements:

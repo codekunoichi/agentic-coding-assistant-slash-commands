@@ -1,3 +1,10 @@
+---
+layout: default
+title: /brainstorm
+parent: Commands
+nav_order: 1
+---
+
 # Brainstorming Session
 
 Your task is NOT to solve this yet, but to help me think through possibilities and considerations.

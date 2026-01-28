@@ -1,3 +1,10 @@
+---
+layout: default
+title: /devils-advocate
+parent: Commands
+nav_order: 4
+---
+
 # Devil's Advocate Review
 
 Your task is to rigorously challenge this idea, plan, or approach. Help me find weaknesses before they become problems.

@@ -1,3 +1,10 @@
+---
+layout: default
+title: /learning-opportunity
+parent: Commands
+nav_order: 8
+---
+
 # Learning Opportunity
 
 Pause development mode. The user wants to deepen their understanding of what we're working on. They have domain knowledge and basic technical competence, and want to level up.
