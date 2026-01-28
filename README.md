@@ -86,6 +86,10 @@ These commands emphasize:
 
 Each command uses `$ARGUMENTS` as a placeholder for user input. Feel free to fork and adapt these prompts to your workflow.
 
+## Acknowledgments
+
+This project was inspired by [Zevi's AI Development Workflow](https://shorthaired-billboard-f9a.notion.site/Zevi-s-AI-Development-Workflow-2c86baffbc90810fa63bd0ee8ecffce9). The baseline prompt content came from Zevi's prompts, refactored to suit my personal style of working.
+
 ## Contributing
 
 PRs welcome! If you've crafted a slash command that improves your Claude Code workflow, consider sharing it.
